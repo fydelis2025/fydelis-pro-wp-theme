@@ -1,0 +1,208 @@
+/* ==============================================
+   Fydelis Pro — Estilos Principais
+   Base: WordPress + Padrões Modernos
+============================================== */
+
+:root {
+    --color-primary: #2563eb;
+    --color-dark: #1f2937;
+    --color-light: #f9fafb;
+    --color-gray: #6b7280;
+    --color-border: #e5e7eb;
+    --font-sans: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --max-width: 1200px;
+    --gap: 2rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: #fff;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* Cabeçalho */
+.site-header {
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--color-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: var(--color-primary);
+}
+
+/* Conteúdo */
+.site-content {
+    padding: 3rem 0;
+}
+
+.content-area {
+    flex: 1;
+}
+
+.article-card {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.post-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: var(--color-primary);
+}
+
+.post-meta {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-excerpt {
+    margin-bottom: 1rem;
+    color: #4b5563;
+}
+
+.read-more-link {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Barra Lateral */
+.widget-area {
+    width: 300px;
+    margin-left: var(--gap);
+}
+
+.widget {
+    margin-bottom: 2rem;
+}
+
+.widget-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* Rodapé */
+.site-footer {
+    background: var(--color-light);
+    padding: 3rem 0 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--color-border);
+}
+
+/* Utilitários */
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.footer-widgets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-widget-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
+}
+
+.footer-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer-menu a {
+    color: var(--color-gray);
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: var(--color-primary);
+}

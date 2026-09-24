@@ -1,0 +1,49 @@
+/* ==============================================
+   Fydelis Pro — Estilos Responsivos
+============================================== */
+
+@media (max-width: 768px) {
+    :root {
+        --gap: 1rem;
+    }
+
+    .site-header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-content > .container {
+        flex-direction: column;
+    }
+
+    .content-area,
+    .widget-area {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .post-title {
+        font-size: 1.35rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

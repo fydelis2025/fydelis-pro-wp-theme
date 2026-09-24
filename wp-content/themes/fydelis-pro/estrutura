@@ -1,0 +1,33 @@
+fydelis-pro/
+├── style.css                  # Cabeçalho obrigatório + estilos globais
+├── index.php                  # Fallback final (obrigatório)
+├── functions.php              # Configurações, enqueue, hooks
+├── header.php                 # Cabeçalho global
+├── footer.php                 # Rodapé global
+├── sidebar.php                # Barra lateral
+├── single.php                 # Post individual
+├── page.php                   # Página estática
+├── front-page.php             # Página inicial
+├── archive.php                # Listagens (categorias, tags, datas)
+├── search.php                 # Resultados de busca
+├── 404.php                    # Página não encontrada
+├── comments.php               # Comentários
+├── inc/
+│   ├── setup.php              # Suporte a recursos
+│   ├── enqueue.php            # Carregamento de assets
+│   ├── security.php           # Proteções e limpeza
+│   └── customizer.php         # Personalizador
+├── template-parts/
+│   ├── content.php            # Loop padrão
+│   ├── content-excerpt.php    # Resumo/listagem
+│   ,         # Navegação de páginas
+├── assets/
+│   ├── css/
+│   │   ├── main.css
+│   │   └── responsive.css
+│   ├── js/
+│   │   ├── main.js
+│   │   └── navigation.js
+│   └── images/
+├── screenshot.png             # Preview do tema
+└── README.md
