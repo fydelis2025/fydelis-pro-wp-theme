@@ -1,0 +1,1 @@
+# fydelis-pro-wp-theme
